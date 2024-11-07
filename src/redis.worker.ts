@@ -4,6 +4,13 @@ import { FETCH_EMAILS_QUEUE, SEND_REPLIES_QUEUE } from "./constants/constants";
 import { GmailService } from "./services/gmail.services";
 import { generateReplyContent, getLabel } from "./automate/automate";
 
+interface ReplyData {
+    to: string;
+    subject: string;
+    content: string;
+    threadId: string;
+    label: string;
+}
 const fetchEmailsQueue = new Queue(FETCH_EMAILS_QUEUE, {
     connection: REDIS_CONFIG
 });
@@ -53,6 +60,7 @@ const replySendingWorker = new Worker(
         
         const replyData: ReplyData = {
             to: emailData.from,
+            // to: "rshreyash08@gmail.com",
             subject: subject,
             content: replyContent,
             threadId: emailData.threadId,

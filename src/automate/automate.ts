@@ -3,7 +3,6 @@ export async function getLabel(email_content: string) {
 
     const openai = new OpenAI({ apiKey: process.env.OPENAI_SECRECT_KEY });
 
-    console.log("categorize kro!!");
     const response = await openai.chat.completions.create({
         model: "gpt-3.5-turbo",
         max_tokens: 60,

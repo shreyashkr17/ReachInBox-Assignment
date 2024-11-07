@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReachInBox - Email Automation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 90%;
+        }
+
+        .logo {
+            margin-bottom: 2rem;
+        }
+
+        .logo img {
+            width: 60px;
+            height: 60px;
+        }
+
+        h1 {
+            color: #1a73e8;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .tagline {
+            color: #5f6368;
+            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+            line-height: 1.5;
+        }
+
+        .google-btn {
+            display: inline-flex;
+            align-items: center;
+            background: #1a73e8;
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(26, 115, 232, 0.2);
+        }
+
+        .google-btn:hover {
+            background: #1557b0;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(26, 115, 232, 0.3);
+        }
+
+        .google-btn img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .features {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e0e0e0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .feature {
+            color: #5f6368;
+        }
+
+        .feature h3 {
+            color: #1a73e8;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .feature p {
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <svg viewBox="0 0 24 24" width="60" height="60">
+                <path fill="#1a73e8" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"/>
+            </svg>
+        </div>
+        
+        <h1>ReachInBox Assignment</h1>
+        <p class="tagline">Automating Your Email Workflow<br>Streamline your communication with intelligent email automation</p>
+        
+        <a href="/auth/google" class="google-btn">
+            <svg viewBox="0 0 24 24" width="24" height="24">
+                <path fill="white" d="M12.545,10.239v3.821h5.445c-0.712,2.315-2.647,3.972-5.445,3.972c-3.332,0-6.033-2.701-6.033-6.032s2.701-6.032,6.033-6.032c1.498,0,2.866,0.549,3.921,1.453l2.814-2.814C17.503,2.988,15.139,2,12.545,2C7.021,2,2.543,6.477,2.543,12s4.478,10,10.002,10c8.396,0,10.249-7.85,9.426-11.748L12.545,10.239z"/>
+            </svg>
+            Sign in with Google
+        </a>
+
+        <div class="features">
+            <div class="feature">
+                <h3>Automate</h3>
+                <p>Streamline your email workflows</p>
+            </div>
+            <div class="feature">
+                <h3>Organize</h3>
+                <p>Smart inbox management</p>
+            </div>
+            <div class="feature">
+                <h3>Track</h3>
+                <p>Monitor email performance</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

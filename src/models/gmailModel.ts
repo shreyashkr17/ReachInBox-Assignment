@@ -1,11 +1,3 @@
-interface ReplyData {
-    to: string;
-    subject: string;
-    content: string;
-    threadId: string;
-    label: string;
-}
-
 interface EmailData {
     messageId: string;
     from: string;
@@ -13,4 +5,12 @@ interface EmailData {
     receivedDate: string;
     content: string;
     threadId: string;
+}
+
+interface ReplyData {
+    to: string;
+    subject: string;
+    content: string;
+    threadId: string;
+    label: string;
 }
