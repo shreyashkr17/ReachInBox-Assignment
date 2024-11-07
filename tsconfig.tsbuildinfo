@@ -1,0 +1,15 @@
+{
+    "root": [
+      "./src/index.ts",
+      "./src/worker.ts",
+      "./src/config/redis.confi.ts",
+      "./src/constants/constants.ts",
+      "./src/models/email.data.model.ts",
+      "./src/models/google.model.ts",
+      "./src/services/gmail.service.ts",
+      "./src/services/google.oauth.service.ts",
+      "./src/utils/utils.ts"
+    ],
+    "version": "5.6.3"
+  }
+  
